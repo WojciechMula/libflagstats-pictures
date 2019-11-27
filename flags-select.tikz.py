@@ -127,7 +127,7 @@ if __name__ == '__main__':
     f = File(buf)
     f.writeln(r"\begin{tikzpicture}")
     try:
-        with_marks = bool(sys.argv[2])
+        with_marks = int(sys.argv[2])
     except IndexError:
         with_marks = False
 
