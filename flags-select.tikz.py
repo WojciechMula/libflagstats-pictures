@@ -135,7 +135,7 @@ if __name__ == '__main__':
     if with_marks:
         draw_mask1(f, -1.5, True)
         draw_mask2(f, -3.5, True)
-        draw_mask3(f, -6.0, True)
+        draw_mask3(f, -5.5, True)
     else:
         draw_mask1(f, -1.0, False)
         draw_mask2(f, -2.0, False)
