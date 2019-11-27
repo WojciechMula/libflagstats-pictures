@@ -131,7 +131,11 @@ def escape(s):
 
 
 def texttt(s):
-    return r'\texttt{%s}' % escape(s)
+    return r'\texttt{%s}' % s
+
+
+def bold(s):
+    return r'\textbf{%s}' % s
 
 
 def draw_description(file, x0, y0, x1, y1, label, anchor):
