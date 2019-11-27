@@ -22,7 +22,7 @@ def draw_flags(file):
     for index, flag in enumerate([FMUNMAP, FUNMAP, FPROPER_PAIR, FPAIRED]):
         bit = flags[flag]
         y1 = bit.top.y + 0.5 + 0.4 * index
-        draw_description(file, bit.top.x, bit.top.y, x1, y1, texttt(flag.label), 'left')
+        draw_description(file, bit.top.x, bit.top.y, x1, y1, texttt(flag), 'left')
 
     # mark spare bits
     draw_horiz_brace(file, flags[15].xleft, flags[12].xright, flags[0].ytop, "unused")
